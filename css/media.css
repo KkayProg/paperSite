@@ -4,6 +4,7 @@
 
     .container {
         margin: 0 25px;
+        padding-top: 60px;
     }
 
     .header__container {
@@ -43,17 +44,121 @@
         font-size: 50px;
     }
 
-    /* .header__icons {
-        justify-self: end;
-    } */
+    /* PAPER */
+
+    .paper {
+        padding-bottom: 60px;
+    }
+
+    .paper__item {
+        max-width: 210px;
+    }
 
     .paper__item {
         flex-direction: column;
+    }
+
+    .paper__versions {
+        margin-bottom: 40px;
+    }
+
+    .paper__main__title {
+        font-size: 30px;
+    }
+
+    .store__item {
+        min-height: 434px;
+    }
+
+    /* STORE */
+
+    .store__container {
+        margin-bottom: 90px;
+    }
+
+    /* SKETCHBOOK */
+
+    .sketchbook__title {
+        font-size: 30px;
+    }
+
+    .sketchbook__container {
+        margin: 0 0 60px 25px;
     }
 
     /* FOOTER */
 
     .footer__container {
         margin: 0 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* HEADER */
+
+    .header__list {
+        gap: 30px;
+    }
+
+    .preview__titile {
+        font-size: 38px;
+    }
+    
+    .preview__descr {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 18px 60px;
+    }
+
+    /* PAPER */
+    .paper__item {
+        max-width: 150px;
+    }
+
+    .paper__item__img {
+        min-width: 150px;
+        width: 150px;
+    }
+
+    .paper__item__title {
+        font-size: 16px;
+    }
+
+    .paper__item__descr {
+        font-size: 16px;
+    }
+
+    .paper__main__title {
+        font-size: 24px;
+    }
+
+    .paper__main__descr {
+        font-size: 16px;
+    }
+
+    /* STORE */
+
+    .store__title {
+        font-size: 24px;
+    }
+
+    .store__descr {
+        font-size: 16px;
+    }
+
+
+    /* SKETCHBOOK */
+    .sketchbook__container {
+        flex-direction: column-reverse;
+    }
+
+    .sketchbook__title {
+        font-size: 24px;
+    }
+
+    .sketchbook__descr {
+        font-size: 16px;
     }
 }
