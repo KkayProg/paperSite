@@ -103,13 +103,28 @@
     .preview__titile {
         font-size: 38px;
     }
-    
+
     .preview__descr {
         font-size: 16px;
     }
 
     .btn {
         padding: 18px 60px;
+    }
+
+    .preview__main {
+        max-width: 287px;
+        margin-bottom: 60px;
+    }
+
+    .preview__container {
+        align-items: flex-end;
+    }
+
+    .paper__main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     /* PAPER */
@@ -132,10 +147,20 @@
 
     .paper__main__title {
         font-size: 24px;
+        margin-bottom: 14px;
     }
 
     .paper__main__descr {
         font-size: 16px;
+    }
+
+    .paper__main__text {
+        max-width: max-content;
+    }
+
+    .logos__container {
+        grid-template-rows: 135px 135px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 
     /* STORE */
@@ -148,7 +173,6 @@
         font-size: 16px;
     }
 
-
     /* SKETCHBOOK */
     .sketchbook__container {
         flex-direction: column-reverse;
@@ -160,5 +184,37 @@
 
     .sketchbook__descr {
         font-size: 16px;
+    }
+
+    .store__item {}
+
+    .sketchbook__text {
+        max-width: 510px;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    .logos__container {
+        height: 80px;
+        scrollbar-width: none; /* Firefox */
+
+
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Chrome, Safari и другие браузеры на базе WebKit */
+    }
+
+
+    .logos__item {
+        flex: 0 0 auto; 
+        min-width: 180px;
     }
 }
