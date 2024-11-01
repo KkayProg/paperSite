@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/media.css">
+
+    <script defer src="./js/main.js"></script>
     <title>Simple</title>
 </head>
 
 <body>
     <header>
-        <div class="header header__container flex">
+        <div class="header header-container flex">
             <div class="header__icons">
 
                 <div class="header__logo">
@@ -29,8 +31,9 @@
                     </svg>
                 </div>
 
-                <div class="header__icons flex">
-                    <div class="header__item">
+                <div id="header__icons" class="header__icons flex">
+                    <div id="header__burger-menu" class="header__burger-menu"></div>
+                    <div class="header__item" id="searcBtn">
                         <a href="">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -50,8 +53,8 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__item">
-                        <a href="">
+                    <div class="header__ite flex" id="inputBtn">
+                        <a id="header__inputLink" href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1_497)">
@@ -71,6 +74,16 @@
                                 </defs>
                             </svg>
                         </a>
+                        <div class="search__main" id="searcMain">
+                            <input type="text" id="searc__input" placeholder="Найти">
+                            <div id="search__close" class="search__close">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" fill="#D1D1E5"/>
+                                    <path d="M5.99961 10.35L10.3496 6" stroke="#4C5866" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.35 10.35L6 6" stroke="#4C5866" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                            </div>
+                        </div>
                     </div>
 
                 </div>

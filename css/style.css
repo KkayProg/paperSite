@@ -24,7 +24,7 @@ ul {
 
 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .btn {
@@ -89,7 +89,7 @@ img {
 
 /* HEADER */
 
-.header__container {
+.header-container {
     margin: 0 auto;
     padding: 28px 0;
     max-width: 1110px;
@@ -121,7 +121,7 @@ img {
 
 .header__list {
     padding: 18px 0 22px 0;
-    gap: 40px;
+    gap: 8px;
 }
 
 .header__item {
@@ -139,10 +139,10 @@ img {
     gap: 30px;
 }
 
-/* .header__icons {
-    display: flex;
-    gap: 30px;
-} */
+.header__burger-menu {
+    display: none;
+}
+
 
 .header__item path {
     transition: stroke .2s ease-in-out;
@@ -445,4 +445,23 @@ img {
 
 .footer__item:active path {
     fill: #7875FE;
+}
+
+#searc__input {
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #4C5866;
+    width: 140px;
+    color: #4C5866;
+    border: none;
+    outline: none;
+}
+
+.search__main {
+    border-bottom: 1px solid #DDDDDD;
+    align-items: center;
+}
+
+.search__close {
+    cursor: pointer;
 }
