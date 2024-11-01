@@ -335,7 +335,7 @@ img {
     font-size: 20px;
     line-height: 23.44px;
     color: #7875FE;
-    background-image: url('./images/arrow.svg');
+    background-image: url('../images/arrow.svg');
     background-repeat: no-repeat;
     background-position: right 4px center;
     padding: 4px;
@@ -346,7 +346,7 @@ img {
 .store__more:hover,
 .store__more:active {
     color: #4946B4;
-    background-image: url('/images/arrowHover.svg');
+    background-image: url('../images/arrowHover.svg');
 }
 
 .store__more:focus {
