@@ -335,7 +335,7 @@ img {
     font-size: 20px;
     line-height: 23.44px;
     color: #7875FE;
-    background-image: url('/images/arrow.svg');
+    background-image: url('./images/arrow.svg');
     background-repeat: no-repeat;
     background-position: right 4px center;
     padding: 4px;
