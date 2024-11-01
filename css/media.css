@@ -196,7 +196,16 @@
 
 @media (max-width: 560px) {
 
+    .container {
+        margin: 0 15px;
+    }
+
+    .logos__item img {
+        max-width: 94%;
+    }
+
     .logos__container {
+        padding-bottom: 60px;
         height: 80px;
         scrollbar-width: none;
         /* Firefox */
@@ -258,14 +267,19 @@
 
     .paper__item {
         flex-direction: row;
-    }
-
-    .paper__item__text {
-        padding: 0;
+        max-width: 100%;
     }
 
     .paper__versions {
         margin-bottom: 60px;
+    }
+
+    .paper__main__descr {
+        line-height: 27.2px;
+    }
+
+    .paper__main__title {
+        line-height: 24px;
     }
 
 
@@ -275,7 +289,7 @@
         padding: 0;
     }
 
-    .preview__main{
+    .preview__main {
         margin-bottom: 50px;
     }
 
@@ -293,5 +307,53 @@
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 21px;
+    }
+
+    .btn {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 14.5px 38px;
+    }
+
+    /* STORE */
+
+    .store__container {
+        margin-bottom: 60px;
+        grid-template-rows: 430px;
+    }
+
+    .store__descr {
+        margin-bottom: 45px;
+        line-height: 27px;
+    }
+
+    .store__title {
+        margin-bottom: 4px;
+        line-height: 28px;
+    }
+    .sketchbook__title {
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .sketchbook__container {
+        margin-bottom: 65px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .footer__medias {
+        padding: 20px 0;
     }
 }
