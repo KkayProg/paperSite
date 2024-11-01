@@ -1,4 +1,5 @@
 @media (max-width: 900px) {
+
     /* HEADER */
 
     .container {
@@ -51,6 +52,9 @@
 
     .paper__item {
         max-width: 210px;
+    }
+
+    .paper__item {
         flex-direction: column;
     }
 
@@ -189,7 +193,9 @@
     }
 }
 
+
 @media (max-width: 560px) {
+
     .container {
         margin: 0 15px;
     }
@@ -201,16 +207,23 @@
     .logos__container {
         padding-bottom: 60px;
         height: 80px;
+        scrollbar-width: none;
+        /* Firefox */
+
+
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
+        /* Firefox */
     }
 
     .scroll-container::-webkit-scrollbar {
         display: none;
+        /* Chrome, Safari и другие браузеры на базе WebKit */
     }
+
 
     .logos__item {
         flex: 0 0 auto;
@@ -221,6 +234,7 @@
         min-height: 390px;
     }
 
+
     /* HEADER */
 
     .header {
@@ -228,6 +242,7 @@
     }
 
     .header__nav {
+        /* maybe */
         display: none;
     }
 
@@ -266,6 +281,7 @@
     .paper__main__title {
         line-height: 24px;
     }
+
 
     /* PREWIEV */
     .preview__container {
@@ -315,7 +331,6 @@
         margin-bottom: 4px;
         line-height: 28px;
     }
-
     .sketchbook__title {
         line-height: 24px;
         margin-bottom: 20px;
