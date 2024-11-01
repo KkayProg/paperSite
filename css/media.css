@@ -198,23 +198,100 @@
 
     .logos__container {
         height: 80px;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
+        /* Firefox */
 
 
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
+        /* Firefox */
     }
-    
+
     .scroll-container::-webkit-scrollbar {
-      display: none; /* Chrome, Safari и другие браузеры на базе WebKit */
+        display: none;
+        /* Chrome, Safari и другие браузеры на базе WebKit */
     }
 
 
     .logos__item {
-        flex: 0 0 auto; 
+        flex: 0 0 auto;
         min-width: 180px;
+    }
+
+    .store__item {
+        min-height: 390px;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        justify-content: center;
+    }
+
+    .header__nav {
+        /* maybe */
+        display: none;
+    }
+
+    .header__icons {
+        margin-top: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header__logo {
+        position: relative;
+        border-bottom: 1px solid #DDDDDD;
+        padding-bottom: 11px;
+        text-align: center;
+    }
+
+    .paper__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .paper__item {
+        flex-direction: row;
+    }
+
+    .paper__item__text {
+        padding: 0;
+    }
+
+    .paper__versions {
+        margin-bottom: 60px;
+    }
+
+
+    /* PREWIEV */
+    .preview__container {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .preview__main{
+        margin-bottom: 50px;
+    }
+
+    .preview__img {
+        display: none;
+    }
+
+    .preview__titile {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .preview__descr {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 21px;
     }
 }
