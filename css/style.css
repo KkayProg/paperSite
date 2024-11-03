@@ -465,3 +465,27 @@ img {
 .search__close {
     cursor: pointer;
 }
+
+.highlight {
+    background-color: yellow;
+} 
+
+
+
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    max-width: 200px;
+    display: none; /* Скрываем по умолчанию */
+}
+
+.suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
